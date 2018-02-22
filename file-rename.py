@@ -49,12 +49,5 @@ def main():
 
 	file_rename(path, pattern)
 
-def test():
-	path = "/mnt/e/Manga/Boku no Hero Academia"
-	pattern = "[堀越耕平] 僕のヒーローアカデミア 第{{#}}巻"
-
-	file_rename(path, pattern)
-
-
 if __name__ == "__main__":
-	test()
+	main()
