@@ -32,7 +32,7 @@ def get_numbered_dirs(path = "."):
 	assert len(path.strip()) > 0, "Path is blank"
 	directory = os.scandir(path)
 
-	prog = re.compile("\d+")
+	prog = re.compile("[^\d](\d{1,2})[^\d]")
 	folders = []
 	for entry in directory:
 		if entry.is_dir():
