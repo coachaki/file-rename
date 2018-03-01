@@ -1,8 +1,13 @@
+# 2018/02/23
+# Version 0.1
+
 import sys
 import os
 import re
 
 def file_rename(path = ".", pattern = "Folder {{#}}"):
+	if len(path) == 0:
+		path = "."
 	targets = get_numbered_dirs(path)
 	rename(targets, pattern)
 
